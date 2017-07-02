@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局属性</title>
+    <link href="style3.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h3>全局属性</h3>
+    <div>
+        <h2>contentEditable属性</h2>
+        <p>
+            该属性由微软开发  并且被其他浏览器反编译并且投入应用的属性。
+            该属性的功能是允许用户编辑元素中的内容，所以元素必须是可以获得到鼠标焦点的元素。
+            点击元素后，元素向用户提供一个插入符号用于编辑   是布尔值类型  满足布尔类型的写法。
+            该属性还有一个默认的继承状态   未设置属性的true和false的属性  可编辑由继承的状态来决定。
+            元素还有一个iscontentEditable 用来获取判断。
+        </p>
+        <ul contenteditable="">
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+        </ul>
+    </div>
+    <div>
+        <h2>designMode属性</h2>
+        <p>用来指定整个页面是否可编辑   当指定了true 或者false  那么页面所有支持contentEditable的属性都变为可编辑或者不可编辑。
+            只能在javascript中被指定，on  可编辑 off 不可编辑
+        </p>
+    </div>
+    <div>
+        <h2>hidden属性</h2>
+        <p>在html5中所有元素都使用一个属性hidden，该属性类似于input中的hidden。  功能是通知浏览器不渲染该属性，使元素处于不可见状态，但是元素
+            中的内容还是浏览器创建的 ，当该元素的hidden属性取消时，该元素的内容就显示出来。  是布尔值类型
+        </p>
+        <p hidden>测试一个hidden属性</p>
+    </div>
+    <div>
+        <h2>spellcheck属性</h2>
+        <p>spellcheck对于input textarea的编写进行语法错误检查</p>
+        <input type="text" spellcheck="">
+    </div>
+    <div>
+        <h2>tabindex属性</h2>
+        <p>tabindex属性 对于控件的遍历 对于组件进行遍历  控制顺序，
+            通过tabindex 让本不需要焦点的组件获取焦点，
+            如果有需要tabindex属性，但是不能使用者提供焦点那就设置成-1
+        </p>
+        <a href="#" tabindex="1">hello world-1!!</a>
+        <a href="#" tabindex="3">hello world-3!!</a>
+        <a href="#" tabindex="2">hello world-2!!</a>
+        <ul tabindex="4">
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+        </ul>
+        <ul tabindex="-1">
+            <li>lala</li>
+            <li>lala</li>
+            <li>lala</li>
+        </ul>
+    </div>
+</body>
+</html>

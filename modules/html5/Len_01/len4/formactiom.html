@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formaction</title>
+</head>
+<body>
+    <form id="testform1">
+        <input type="text" ><br>
+        <textarea form="testform1">这个是以前的写法</textarea><br>
+    </form>
+    <textarea form="testform1">把属性移到外面也是可以的，这个适合组织一些css</textarea><br>
+
+    <form id="testform2" >
+        <p>以往的话都是把表单的提交卸载form里面</p>
+        <input type="submit" name="s1" value="v1" formaction="http://localhost:8080/test1">提交到了http://localhost:8080/test1<br>
+        <input type="submit" name="s2" value="v2" formaction="http://localhost:8080/test2">提交到了http://localhost:8080/test2<br>
+        <input type="submit" name="s3" value="v3" formaction="http://localhost:8080/test3">提交到了http://localhost:8080/test3<br>
+    </form>
+</body>
+</html>

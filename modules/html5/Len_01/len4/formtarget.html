@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formaction</title>
+</head>
+<body>
+    <form id="testform1">
+        <input type="text" ><br>
+        <textarea form="testform1">这个是以前的写法</textarea><br>
+    </form>
+    <textarea form="testform1">把属性移到外面也是可以的，这个适合组织一些css</textarea><br>
+
+    <form id="testform2" >
+        <input type="submit" name="s1" value="v1" formtarget="_blank" formaction="http://localhost:8080/test1">提交blank<br>
+        <input type="submit" name="s1" value="v1" formtarget="_self" formaction="http://localhost:8080/test1">提交self<br>
+        <input type="submit" name="s1" value="v1" formtarget="_parent" formaction="http://localhost:8080/test1">提交parent<br>
+        <input type="submit" name="s1" value="v1" formtarget="_top" formaction="http://localhost:8080/test1">提交top<br>
+        <input type="submit" name="s1" value="v1" formtarget="_framename" formaction="http://localhost:8080/test1">提交framename<br>
+    </form>
+</body>
+</html>
